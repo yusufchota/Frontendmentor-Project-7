@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      color: hsl(228, 12%, 48%);
+      margin: 0;
+      padding: 0;
+      background-color: hsl(49, 100%, 91%);
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card{
+      height: 55vh;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      background: white;
+      border-radius: 20px;
+    }
+    .card-image{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+    }
+    .card-content{
+      height: 100%;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .product-image{
+      height: 100%;
+      width: 100%;
+      border-radius: 20px 0px 0px 20px;
+    }
+    .insider-card-contant{
+      height: 96%;
+      width: 100%;
+      margin: 30px;
+    }
+    .para-title{
+      letter-spacing: 5PX;
+      font-size: 13PX;
+      margin-top: 10px;
+    }
+    .h2-title{
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+      margin-top: -10px;
+    }
+    .description{
+      font-size: 14px;
+      margin-top: -20px;
+      padding: 10px 0px 10px 0px;
+    }
+    .pricing{
+      display: flex;
+      align-items: center;
+      margin-top: -10px;
+      padding-left: 0px;
+    }
+    .current-price{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: hsl(158, 36%, 37%);
+    }
+    .div-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .add-to-cart{
+      width: 50%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <div class="card-image">
+        <img src="./images/image-product-desktop.jpg" alt="perfume-image" class="product-image">
+      </div>
+      <div class="card-content">
+        <div class="insider-card-contant">
+          <p class="para-title">PERFUME</p>
+          <h2 class="h2-title">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p class="description">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,Perfumer-Creator for the House of Chanel.
+          </p>
+          <div class="pricing">
+            <span class="current-price">$149.99</span>
+            <span class="original-price" style="text-decoration: line-through; color: hsl(228, 12%, 70%); margin-left: 30px;font-size: 14px;">$169.99</span>
+          </div>
+          <div class="div-button">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          
+        </div>
+        <!-- <h2 class="brand">PERFUME</h2>
+        <h1 class="product-name"></h1>
+        <p class="description"></p>
+        
+         -->
+      </div>
+    </section>  
+  </main>
+  <!-- Perfume
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
